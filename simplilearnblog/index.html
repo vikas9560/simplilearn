@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>Simplilearn Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header>
+        <section class="HeaderSearch py-4 px-5 position-fixed d-flex align-items-center">
+            <form class="searchForm" action="" name="searchForm">
+                <div class="input-group">
+                    <input type="search" class="form-control rounded-0 bg-transparent" id="searhField" placeholder="Search...">
+                    <div class="input-group-text border-0 rounded-0 px-3"><i class="fa fa-search"></i></div>
+                </div>
+            </form>
+            <i id="hideSearch" class="bi bi-x-lg position-absolute"></i>
+        </section>
+
+        <section class="topBar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-sm-12 col-md-6">
+                        <div class="trendingNews d-flex flex-wrap">
+                            <p class="position-relative pe-3 me-3 text-uppercase">Trending</p>
+                            <ul class="rotatingNews list-unstyled mb-0">
+                                <li>&bull; 85% report career benefits including promotion or a new job</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-sm-12 col-md-6">
+                        <div class="headerDateSocial d-flex flex-wrap justify-content-end">
+                            <div class="headerDate position-relative pe-3 me-3 text-uppercase">
+                                <i class="bi bi-calendar3"></i> 
+                                <span id="currentDate">Current Date</span>
+                            </div>
+                            <ul class="headerSocial list-inline mb-0">
+                                <li class="list-inline-item text-uppercase">Follow Us</li>
+                                <li class="list-inline-item"><a title="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li class="list-inline-item"><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li class="list-inline-item"><a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li class="list-inline-item"><a title="Instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li class="list-inline-item"><a title="Pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logMenuBar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8 col-sm-4 col-md-3">
+                        <a class="d-inline-block siteLogo" href="index.html">
+                            <img class="img-fluid" src="images/simplilearn-logo.svg" alt="simplilearn" width="250">
+                        </a>
+                    </div>
+                    <div class="col-8 col-sm-4 col-md-7 align-items-center d-flex">
+                        <ul class="mainMenu list-inline mb-0">
+                            <li class="list-inline-item"><a href="#">Home</a></li>
+                            <li class="list-inline-item"><a href="#">Features</a></li>
+                            <li class="list-inline-item"><a href="#">Categories</a>
+                                <ul class="sumMenu mb-0 list-unstyled">
+                                    <li><a href="#">Master's Programs</a></li>
+                                    <li><a href="#">Post Graduate Programs</a></li>
+                                    <li><a href="#">Certification Courses</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item"><a href="#">Top Stories</a>
+                                <ul class="sumMenu mb-0 list-unstyled">
+                                    <li><a href="#">Job Guarantee</a></li>
+                                    <li><a href="#">Hire From Us</a></li>
+                                    <li><a href="#">Students</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-inline-item"><a href="#">Latest News</a></li>
+                            <li class="list-inline-item"><a href="#">Awards and Accolades</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-8 col-sm-4 col-md-2 d-flex align-items-center justify-content-end">
+                        <div class="searchHamburger">
+                            <i id="headerSearch" class="fa fa-search me-3"></i>
+                            <i id="desktopHamburger" class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="popularCategories">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="popularCateWrap d-flex align-items-center flex-wrap">
+                        <div class="popularImg position-relative">
+                            <a href="single.html" class="d-inline-block"><img class="img-fluid rounded-circle img-thumbnail" src="images/job-guarantee.jpg" alt="Job Guarantee" width="100" height="100"></a>
+                            <span class="badge rounded-circle position-absolute">5</span>
+                        </div>
+                        <div class="popularContent ps-4">
+                            <a href="single.html" class="d-inline-block tagLink px-2">Technology</a>
+                            <h3 class="my-2"><a href="single.html">Job Guarantee</a></h3>
+                            <div id="postDate"><i class="bi bi-calendar3"></i> Saturday 4, 2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="popularCateWrap d-flex align-items-center flex-wrap">
+                        <div class="popularImg position-relative">
+                            <a href="single.html" class="d-inline-block"><img class="img-fluid rounded-circle img-thumbnail" src="images/resources.jpg" alt="Resources" width="100" height="100"></a></a>
+                            <span class="tagLinkBlue badge rounded-circle position-absolute">5</span>
+                        </div>
+                        <div class="popularContent ps-4">
+                            <a href="single.html" class="d-inline-block tagLink px-2 tagLinkBlue">Mechanical</a>
+                            <h3 class="my-2"><a href="single.html">Resources</a></h3>
+                            <div id="postDate"><i class="bi bi-calendar3"></i> Saturday 4, 2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="popularCateWrap d-flex align-items-center flex-wrap">
+                        <div class="popularImg position-relative">
+                            <a href="single.html" class="d-inline-block"><img class="img-fluid rounded-circle img-thumbnail" src="images/corporate-training.jpg" alt="Corporate Training" width="100" height="100">
+                            <span class="badge rounded-circle position-absolute">5</span>
+                        </div>
+                        <div class="popularContent ps-4">
+                            <a href="single.html" class="d-inline-block tagLink px-2">Electronic</a>
+                            <h3 class="my-2"><a href="single.html">Corporate Training</a></h3>
+                            <div id="postDate"><i class="bi bi-calendar3"></i> Saturday 4, 2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="popularCateWrap d-flex align-items-center flex-wrap">
+                        <div class="popularImg position-relative">
+                            <a href="single.html" class="d-inline-block"><img class="img-fluid rounded-circle img-thumbnail" src="images/instructor.jpg" alt="Become an Instructor" width="100" height="100"></a>
+                            <span class="tagLinkBlue badge rounded-circle position-absolute">5</span>
+                        </div>
+                        <div class="popularContent ps-4">
+                            <a href="single.html" class="d-inline-block tagLink px-2 tagLinkBlue">Eliectric</a>
+                            <h3><a href="single.html">Become an Instructor</a></h3>
+                            <div id="postDate"><i class="bi bi-calendar3"></i> Saturday 4, 2022</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="mainContent">
+
+        <!-- Popular Posts -->
+        <section class="popularPost py-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-7 popularPostLeft">
+                        <article class="position-relative contentAboveImg">
+                            <figure class="mb-0">
+                                <a href="single.html" class="d-inline-block position-relative"><img class="img-fluid img-thumbnail" src="images/full-stack-java-developer.jpg" alt="Full Stack Java Developer"></a>
+                            </figure>
+                            <div class="postBoxContent position-absolute">
+                                <a href="#" class="d-inline-block tagLink px-2 tagLinkBlue">Technology</a>
+                                <h2 class="mb-3 mt-2"><a class="d-inline-block" href="single.html">Full Stack Java Developer Job Guarantee Program</a></h2>
+                                <div class="postMeta mb-3">
+                                    <span class="postAuthor text-uppercase d-inline-block me-2">by <a href="#">Vikas Kumar</a></span>
+                                    <i class="bi bi-calendar3"></i> <span class="d-inline-block" id="postDate">Saturday 4, 2022</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 popularPostRight">
+                        <article class="position-relative d-flex align-items-center leftRight">
+                            <figure class="mb-0">
+                                <a class="d-inline-block" href="single.html"><img class="img-fluid img-thumbnail" src="images/data-science.jpg" alt="Data Science Job Guarantee Program"></a>
+                            </figure>
+                            <div class="postBoxContent ps-4">
+                                <a href="#" class="d-inline-block tagLink px-2">Electronic</a>
+                                <h2 class="mt-2"><a class="d-inline-block" href="single.html">Data Science Job Guarantee Program</a></h2>
+                                <div class="postMeta mb-3">
+                                    <span class="postAuthor text-uppercase d-inline-block me-2">by <a href="#">Vikas Kumar</a></span>
+                                    <i class="bi bi-calendar3"></i> <span class="d-inline-block" id="postDate">Saturday 4, 2022</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="position-relative d-flex align-items-center leftRight">
+                            <figure class="mb-0">
+                                <a class="d-inline-block" href="single.html"><img class="img-fluid img-thumbnail" src="images/data-science.jpg" alt="Data Science Job Guarantee Program"></a>
+                            </figure>
+                            <div class="postBoxContent ps-4">
+                                <a href="#" class="d-inline-block tagLink px-2 tagLinkBlue">Eliectric</a>
+                                <h2 class="mt-2"><a class="d-inline-block" href="single.html">Data Science Job Guarantee Program</a></h2>
+                                <div class="postMeta mb-3">
+                                    <span class="postAuthor text-uppercase d-inline-block me-2">by <a href="#">Vikas Kumar</a></span>
+                                    <i class="bi bi-calendar3"></i> <span class="d-inline-block" id="postDate">Saturday 4, 2022</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="position-relative d-flex align-items-center leftRight">
+                            <figure class="mb-0">
+                                <a class="d-inline-block" href="single.html"><img class="img-fluid img-thumbnail" src="images/data-science.jpg" alt="Data Science Job Guarantee Program"></a>
+                            </figure>
+                            <div class="postBoxContent ps-4">
+                                <a href="#" class="d-inline-block tagLink px-2">Eliectric</a>
+                                <h2 class="mt-2"><a class="d-inline-block" href="single.html">Data Science Job Guarantee Program</a></h2>
+                                <div class="postMeta mb-3">
+                                    <span class="postAuthor text-uppercase d-inline-block me-2">by <a href="#">Vikas Kumar</a></span>
+                                    <i class="bi bi-calendar3"></i> <span class="d-inline-block" id="postDate">Saturday 4, 2022</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="position-relative d-flex align-items-center leftRight">
+                            <figure class="mb-0">
+                                <a class="d-inline-block" href="single.html"><img class="img-fluid img-thumbnail" src="images/data-science.jpg" alt="Data Science Job Guarantee Program"></a>
+                            </figure>
+                            <div class="postBoxContent ps-4">
+                                <a href="#" class="d-inline-block tagLink px-2 tagLinkBlue">Eliectric</a>
+                                <h2 class="mt-2"><a class="d-inline-block" href="single.html">Data Science Job Guarantee Program</a></h2>
+                                <div class="postMeta mb-3">
+                                    <span class="postAuthor text-uppercase d-inline-block me-2">by <a href="#">Vikas Kumar</a></span>
+                                    <i class="bi bi-calendar3"></i> <span class="d-inline-block" id="postDate">Saturday 4, 2022</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add Banner -->
+        <section class="addBanner">
+            <div class="container-fluid">
+                <a class="d-inline-block" href="#" target="_blank">
+                    <figure class="m-0">
+                        <img class="img-fluid" src="images/add-banner.jpg" alt="Add">
+                    </figure>
+                </a>
+            </div>
+        </section>
+
+        <!-- Top Stories -->
+        <section class="topStories pt-5 pb-4">
+            <div class="container-fluid">
+                <h2 class="sectionHeading mb-0 position-relative d-flex align-items-center">
+                    Top Stories
+                    <span class="headingDot"></span>
+                    <span class="headingLine"></span>
+                </h2>
+
+                <div class="row pt-4">
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <article class="position-relative">
+                            <figure class="mb-0">
+                                <a class="d-inline-block" href="#"><img class="img-fluid img-thumbnail" src="images/data-science.jpg" alt="Data Science Job Guarantee Program"></a>
+                            </figure>
+                            <div class="postBoxContent pt-4">
+                                <a href="#" class="d-inline-block tagLink px-2">Software</a>
+                                <h3 class="mt-2"><a class="d-inline-block" href="#">Data Science Job Guarantee Program</a></h3>
+                            <div class="postMeta mb-3">
+                                <span class="postAuthor text-uppercase d-inline-block me-2">by <a href="#">Vikas Kumar</a></span>
+                                <i class="bi bi-calendar3"></i> <span class="d-inline-block" id="postDate">Saturday 4, 2022</span>
+                            </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <article class="position-relative">
+                            <figure class="mb-0">
+                                <a class="d-inline-block" href="#"><img class="img-fluid img-thumbnail" src="images/data-science.jpg" alt="Data Science Job Guarantee Program"></a>
+                            </figure>
+                            <div class="postBoxContent pt-4">
+                                <a href="#" class="d-inline-block tagLink px-2 tagLinkBlue">Technology</a>
+                                <h3 class="mt-2"><a class="d-inline-block" href="#">Data Science Job Guarantee Program</a></h3>
+                                <div class="postMeta mb-3">
+                                    <span class="postAuthor text-uppercase d-inline-block me-2">by <a href="#">Vikas Kumar</a></span>
+                                    <i class="bi bi-calendar3"></i> <span class="d-inline-block" id="postDate">Saturday 4, 2022</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <article class="position-relative">
+                            <figure class="mb-0">
+                                <a class="d-inline-block" href="#"><img class="img-fluid img-thumbnail" src="images/data-science.jpg" alt="Data Science Job Guarantee Program"></a>
+                            </figure>
+                            <div class="postBoxContent pt-4">
+                                <a href="#" class="d-inline-block tagLink px-2">Eliectric</a>
+                                <h3 class="mt-2"><a class="d-inline-block" href="#">Data Science Job Guarantee Program</a></h3>
+                                <div class="postMeta mb-3">
+                                    <span class="postAuthor text-uppercase d-inline-block me-2">by <a href="#">Vikas Kumar</a></span>
+                                    <i class="bi bi-calendar3"></i> <span class="d-inline-block" id="postDate">Saturday 4, 2022</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 mb-4">
+                        <article class="position-relative">
+                            <figure class="mb-0">
+                                <a class="d-inline-block" href="#"><img class="img-fluid img-thumbnail" src="images/data-science.jpg" alt="Data Science Job Guarantee Program"></a>
+                            </figure>
+                            <div class="postBoxContent pt-4">
+                                <a href="#" class="d-inline-block tagLink px-2 tagLinkBlue">Eliectric</a>
+                                <h3 class="mt-2"><a class="d-inline-block" href="#">Data Science Job Guarantee Program</a></h3>
+                                <div class="postMeta mb-3">
+                                    <span class="postAuthor text-uppercase d-inline-block me-2">by <a href="#">Vikas Kumar</a></span>
+                                    <i class="bi bi-calendar3"></i> <span class="d-inline-block" id="postDate">Saturday 4, 2022</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="latestNews py-5">
+            <div class="container-fluid">
+                
+                <div class="tabTitle d-flex flex-wrap">
+                    <h2 class="sectionHeading mb-0 position-relative d-flex align-items-center">
+                        Latest News
+                        <span class="headingDot"></span>
+                        <span class="headingLine"></span>
+                    </h2>
+                    <ul class="navTabs d-inline-flex flex-wrap list-unstyled border mb-0 ms-3" id="navTabs">
+                        <li class="menu-item">
+                            <a class="px-3 py-2 d-inline-block menuLink active" id="menuTab-1" data-bs-toggle="tab">Technology</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="px-3 py-2 d-inline-block menuLink" id="menuTab-2" data-bs-toggle="tab">Software</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="px-3 py-2 d-inline-block menuLink" id="menuTab-3" data-bs-toggle="tab">Crypto</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="px-3 py-2 d-inline-block menuLink" id="menuTab-4" data-bs-toggle="tab">Dev Oops</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabsContent pt-5">
+                    <div class="tabContentRow">
+                        <article class="position-relative d-flex align-items-center leftRight">
+                            <figure class="mb-0">
+                                <a class="d-inline-block" href="#"><img class="img-fluid img-thumbnail" src="images/wharton-banner.jpg" alt="wharton banner"></a>
+                            </figure>
+                            <div class="postBoxContent ps-4">
+                                <a href="#" class="d-inline-block tagLinkBlue px-2">AI & Machine Learning</a>
+                                <h2 class="my-3"><a class="d-inline-block" href="#">AI for Decision Making: Business Strategies and Applications</a></h2>
+                                <p class="mb-3">This AI program with Wharton Online gives you the competitive edge in emerging business technologies. The program delivers a foundational understanding of today's top technologies, including big data, AI, and machine learning, and how you can use them to support your organization's strategy.</p>
+                                <div class="postMeta mb-3">
+                                    <span class="postAuthor text-uppercase d-inline-block me-2">by <a href="#">Vikas Kumar</a></span>
+                                    <i class="bi bi-calendar3"></i> <span class="d-inline-block" id="postDate">Saturday 4, 2022</span>
+                                </div>
+                                <a href="#" class="btn btn-primary border-0 rounded-0">Read More</a>
+                            </div>
+                        </article>
+                        <article class="position-relative d-flex align-items-center leftRight">
+                            <figure class="mb-0">
+                                <a class="d-inline-block" href="#"><img class="img-fluid img-thumbnail" src="images/wharton-banner.jpg" alt="wharton banner"></a>
+                            </figure>
+                            <div class="postBoxContent ps-4">
+                                <a href="#" class="d-inline-block tagLink px-2">Business and Leadership</a>
+                                <h2 class="my-3"><a class="d-inline-block" href="#">Post Graduate Program in Design Thinking & Innovation</a></h2>
+                                <p class="mb-3">Master design thinking as a strategic tool for business transformation. In this Postgraduate Program in Design Thinking & Innovation with UMass Amherst and EY, create disruptive solutions that integrate customer desirability, business viability, and technological feasibility.</p>
+                                <div class="postMeta mb-3">
+                                    <span class="postAuthor text-uppercase d-inline-block me-2">by <a href="#">Vikas Kumar</a></span>
+                                    <i class="bi bi-calendar3"></i> <span class="d-inline-block" id="postDate">Saturday 4, 2022</span>
+                                </div>
+                                <a href="#" class="btn btn-warning border-0 rounded-0">Read More</a>
+                            </div>
+                        </article>
+                        <article class="position-relative d-flex align-items-center leftRight">
+                            <figure class="mb-0">
+                                <a class="d-inline-block" href="#"><img class="img-fluid img-thumbnail" src="images/wharton-banner.jpg" alt="wharton banner"></a>
+                            </figure>
+                            <div class="postBoxContent ps-4">
+                                <a href="#" class="d-inline-block tagLinkBlue px-2">Digital Marketing</a>
+                                <h2 class="my-3"><a class="d-inline-block" href="#">Professional Certificate in Digital Marketing</a></h2>
+                                <p class="mb-3">Become a Digital Marketing expert with the help of the professional certificate, offered by IMT Ghaziabad in collaboration with Simplilearn. Get a holistic understanding of the digital marketing field by exploring topics like SEO, Social Media, PPC, Web Analytics, and Marketing Analytics.</p>
+                                <div class="postMeta mb-3">
+                                    <span class="postAuthor text-uppercase d-inline-block me-2">by <a href="#">Vikas Kumar</a></span>
+                                    <i class="bi bi-calendar3"></i> <span class="d-inline-block" id="postDate">Saturday 4, 2022</span>
+                                </div>
+                                <a href="#" class="btn btn-primary border-0 rounded-0">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribeSection py-5">
+            <div class="container-fluid">
+                <form class="subscribeForm">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                            <img src="images/subscribe.png" alt="subscribe" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-5 col-lg-5">
+                            <h2 class="sectionHeading mb-4">
+                                Get The Best Blog Stories into Your inbox!
+                            </h2>
+                            <input type="email" class="form-control border-0 rounded-0" placeholder="your-email@domain.com" aria-label="your-email@domain.com">
+                            <input type="button" class="btn btn-primary w-100 mt-3 border-0 rounded-0" value="Subscribe">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mainFooter">
+        <section class="footerTop py-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <h3 class="mb-4">About us</h3>
+                        <p>Simplilearn is the world's #1 online bootcamp and one of the world's leading certification training providers. We partner with companies and individuals to address their unique needs, providing training and coaching that helps working professionals achieve their career goals.</p>
+
+                        <ul class="list-inline mb-0 mt-4">
+                            <li class="list-inline-item text-uppercase">Follow Us: </li>
+                            <li class="list-inline-item"><a title="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a title="Instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a title="Pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2">
+                        <h3 class="mb-4">Categories</h3>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#">Master's Programs</a></li>
+                            <li><a href="#">Post Graduate Programs</a></li>
+                            <li><a href="#">Certification Courses</a></li>
+                            <li><a href="#">Become an instructor</a></li>
+                            <li><a href="#">Skillup</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-2">
+                        <h3 class="mb-4">Categories</h3>
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="#">Trending Post Graduate Programs</a></li>
+                            <li><a href="#">Trending Master Programs</a></li>
+                            <li><a href="#">Trending Courses</a></li>
+                            <li><a href="#">Trending Resources</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <h3 class="mb-4">Recent Posts</h3>
+                        <div class="popularCateWrap d-flex align-items-center flex-wrap">
+                            <div class="popularImg position-relative">
+                                <a href="#"><img class="img-fluid rounded-circle img-thumbnail" src="images/job-guarantee.jpg" alt="Job Guarantee" width="100" height="100"></a>
+                            </div>
+                            <div class="popularContent ps-4">
+                                <h3 class="my-2"><a href="#">Why write for Simplilearn?</a></h3>
+                                <p class="mb-2">Our readers come to the Simplilearn blog to gain</p>
+                                <div id="postDate"><i class="bi bi-calendar3"></i> Saturday 4, 2022</div>
+                            </div>
+                        </div>
+                        <!-- <div class="popularCateWrap d-flex align-items-center flex-wrap">
+                            <div class="popularImg position-relative">
+                                <img class="img-fluid rounded-circle img-thumbnail" src="images/resources.jpg" alt="Resources" width="100" height="100">
+                            </div>
+                            <div class="popularContent ps-4">
+                                <h3 class="my-2">How to get your article approved by Simplilearn</h3>
+                                <p class="mb-2">Submit your 800-1,000 word draft in MS Word format (.docx/.doc)</p>
+                                <div id="postDate"><i class="bi bi-calendar3"></i> Saturday 4, 2022</div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footerBottom text-center py-4 border-top">
+            <div class="container">
+                <span id="curretYear">2022</span> &copy; Simplilearn. All right reserved by <a target="_blank" href="#">Vikas Kumar</a>.
+            </div>
+        </section>
+    </footer>
+
+    <div class="aboutSideBar p-5 position-fixed">
+        <div class="sideBarLogo mb-4 pb-4 border-bottom position-relative">
+            <a class="d-inline-block siteLogo" href="index.html">
+                <img class="img-fluid" src="images/simplilearn-logo.svg" alt="simplilearn" width="250">
+            </a>
+            <i id="hideAboutSideBar" class="bi bi-x-octagon position-absolute"></i>
+        </div>
+        <div class="aboutSimpliSideBar mb-4 pb-4 border-bottom">
+            <h3 class="mt-0 mb-3">About Us</h3>
+            <p>Simplilearn is the world's #1 online bootcamp and one of the world's leading certification training providers. We partner with companies and individuals to address their unique needs, providing training and coaching that helps working professionals achieve their career goals.</p>
+        </div>
+        <div class="contactSimpliSideBar">
+            <h3 class="mt-0 mb-3">Contact Info</h3>
+            <ul class="contactInfoList list-unstyled">
+                <li>
+                    <i class="fa fa-map-marker"></i>
+                    Chicago 12, Melborne City, USA
+                </li>
+                <li>
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:7983026510">
+                        +91-7983026510
+                    </a>
+                </li>
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:vikas.digllia@gmail.com">
+                        vikas.digllia@gmail.com
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="socialShare list-inline">
+                <li class="list-inline-item mb-2"><a class="fb d-inline-flex justify-content-center align-items-center" target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item mb-2"><a class="tw d-inline-flex justify-content-center align-items-center" target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item mb-2"><a class="yu d-inline-flex justify-content-center align-items-center" target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                <li class="list-inline-item mb-2"><a class="dr d-inline-flex justify-content-center align-items-center" target="_blank" href="https://dribbble.com/"><i class="fa fa-dribbble"></i> </a></li>
+                <li class="list-inline-item mb-2"><a class="dw d-inline-flex justify-content-center align-items-center" target="_blank" href="https://cloud.google.com/"><i class="fa fa-cloud"></i></a></li>
+                <li class="list-inline-item mb-2"><a class="wh d-inline-flex justify-content-center align-items-center" target="_blank" href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
