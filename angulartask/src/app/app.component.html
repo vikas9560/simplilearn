@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<main class="mainContent py-5 text-center">
+  <div class="container">
+    <h2 class="mb-4">This is my first Angular Application</h2>
+    <p>{{message1}}</p>
+    <p>{{message2}}</p>
+    <p><img *ngIf="flag" [src]="siteLogo" alt="Simplilearn" [width]="siteLogoWidth" [height]="siteLogoHeight"></p>
+    <button (click)="showImage()">Show Image on Click</button>
+  </div>
+</main>
+
+<app-footer></app-footer>
