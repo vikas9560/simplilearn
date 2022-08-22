@@ -1,0 +1,9 @@
+Goal: I create a blog layout for Simplilaern with Front and single page.
+
+I follow the folowing steps for create the blog:
+
+Step 1: I am using VS Code Editor.
+Step 2: I used Bootstarp framework.
+Step 3: I used HTML 5, CSS 3 and Javascript.
+Step 4: I create two file index.html and single.html.
+Step 5: I write the JS code inside 'app.js' which is exist inside 'js folder' and CSS code in 'app.css' which is exist inside 'css folder'

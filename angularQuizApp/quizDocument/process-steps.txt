@@ -1,0 +1,11 @@
+Goal: I create a Online test Quiz App
+
+I follow the following steps to create a Test Quiz App:
+
+Step 1: I am using VS Code Editor.
+Step 2: I used Bootstarp(ng install bootstrap) with the Angular.
+Step 3: I used HTML 5, CSS 3 and Javascript, Angular.
+Step 4: I create a Angular application using: ng new angularQuizApp --routing
+Step 5: I create a following component: Header, Footer, Welcome, Question by using ng g c (Component name)
+Step 5: I create a service inside service folder by using ng g s service/question.
+Step 6: I create a questions JSON file inside assets, Which have the question and answer list.

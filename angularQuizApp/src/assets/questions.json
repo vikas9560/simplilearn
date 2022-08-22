@@ -1,0 +1,194 @@
+{
+  "questions" : [
+    {
+      "question": "1. Who is sometimes called as father of Angularjs?",
+      "options": [
+        {
+          "ans": "Brad Green"
+        },
+        {
+          "ans": "Misko Hevery",
+          "correct" : true
+        },
+        {
+          "ans": "Brad Richardson"
+        },
+        {
+          "ans": "Chuck Jazdzewski"
+        }
+      ],
+      "explaination": "Misko Hevery called as father of Angularjs."
+    },
+    {
+      "question": "2. Which of the following is correct about TypeScript?",
+      "options": [
+        {
+          "ans": "Angular is based on TypeScript."
+        },
+        {
+          "ans": "This is a superset of JavaScript."
+        },
+        {
+          "ans": "TypeScript is maintained by Microsoft."
+        },
+        {
+          "ans": "All of the above.",
+          "correct" : true
+        }
+      ],
+      "explaination": "All the options are correct about TypeScript."
+    },
+    {
+      "question": "3. What is the decorator used for configuring your module class?",
+      "options": [
+        {
+          "ans": "@NgModule",
+          "correct" : true
+        },
+        {
+          "ans": "@NgApp"
+        },
+        {
+          "ans": "Both"
+        },
+        {
+          "ans": "None of above"
+        }
+      ],
+      "explaination": "@NgModule decorator used for configuring your module class."
+    },
+    {
+      "question": "4. Which angular decorator allows us to define the pipe name that is globally available for use in any template in the across application?",
+      "options": [
+        {
+          "ans": "pipeName"
+        },
+        {
+          "ans": "pipeDeco"
+        },
+        {
+          "ans": "Pipe",
+          "correct" : true
+        },
+        {
+          "ans": "None of above"
+        }
+      ],
+      "explaination": "Pipe angular decorator allows us to define the pipe name."
+    },
+    {
+      "question": "5. Which character is used for chaining multiple pipes?",
+      "options": [
+        {
+          "ans": "|",
+          "correct" : true
+        },
+        {
+          "ans": ":"
+        },
+        {
+          "ans": "Both"
+        },
+        {
+          "ans": "None of above"
+        }
+      ],
+      "explaination": "| character is used for chaining multiple pipes."
+    },
+    {
+      "question": "6. RxJS can be used for?",
+      "options": [
+        {
+          "ans": "Browser"
+        },
+        {
+          "ans": "Server Side"
+        },
+        {
+          "ans": "Both",
+          "correct" : true
+        },
+        {
+          "ans": "None of above"
+        }
+      ],
+      "explaination": "RxJS can be used for Browser & Server Side."
+    },
+    {
+      "question": "7. How Observables are Used?",
+      "options": [
+        {
+          "ans": "The Reactive Forms Module uses reactive programming and Observables for listening to user input"
+        },
+        {
+          "ans": "The @output() decorator in a component takes an EventEmitter instance. EventEmitter is a subclass of the RxJS Observable"
+        },
+        {
+          "ans": "Both",
+          "correct" : true
+        },
+        {
+          "ans": "None of above"
+        }
+      ],
+      "explaination": "Observables are used both two options."
+    },
+    {
+      "question": "8. What is .subscribe?",
+      "options": [
+        {
+          "ans": "Streams data in asynchronously"
+        },
+        {
+          "ans": "Streams data in synchronously"
+        },
+        {
+          "ans": "Both",
+          "correct" : true
+        },
+        {
+          "ans": "None of above"
+        }
+      ],
+      "explaination": "subscribe both two options."
+    },
+    {
+      "question": "9. Which of the following is not a hook application life cycle?",
+      "options": [
+        {
+          "ans": "ngOnChanges"
+        },
+        {
+          "ans": "ngViewStart",
+          "correct" : true
+        },
+        {
+          "ans": "ngOnInit"
+        },
+        {
+          "ans": "None of above"
+        }
+      ],
+      "explaination": "ngViewStart is not a hook application life cycle."
+    },
+    {
+      "question": "10. Router is part of which of the following module?",
+      "options": [
+        {
+          "ans": "@angular/core"
+        },
+        {
+          "ans": "@angular/router",
+          "correct" : true
+        },
+        {
+          "ans": "Both"
+        },
+        {
+          "ans": "None of above"
+        }
+      ],
+      "explaination": "Router is part of @angular/router module."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+I follow the following steps:
+
+Step 1: I install the git.
+Step 2: I install the Node.
+Step 3: I install npm.
+Step 4: I install Angular (ng install -g @angular/cli).
+Step 5: I create a Angular App from the name angulartask (ng new angulartask).
+Step 6: Enter the app director (cd angulartask).
+Step 7: Install Bootstrap (npm install bootstrap)
+Step 8: Run the application (ng nserve).
+Step 9: Generate Header & Footer Component (ng g c header or footer)
+Step 10: I call the content and images.
